@@ -1,0 +1,129 @@
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --primary-col-1: #14213D;
+    --primary-col-2: #FCA311;
+    --primary-col-3: #E5E5E5;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* text-color  */
+.text-p1 {
+    color: var(--primary-col-1) !important;
+}
+
+.text-p2 {
+    color: var(--primary-col-2) !important;
+}
+
+.text-p3 {
+    color: var(--primary-col-3) !important;
+}
+/* background-color  */
+.bg-p1 {
+    background-color: var(--primary-col-1) !important;
+}
+
+.bg-p2 {
+    background-color: var(--primary-col-2) !important;
+}
+
+.bg-p3 {
+    background-color: var(--primary-col-3) !important;
+}
+/* button */
+.btn{
+    background-color: var(--primary-col-1);
+}
+.btn:hover{
+    background-color: #14213dde;
+}
+/* border */
+.border-p1{
+    border-color: var(--primary-col-1) !important;
+}
+
+.border-p2 {
+    border-color: var(--primary-col-2) !important;
+}
+
+.border-p3 {
+    border-color: var(--primary-col-3) !important;
+}
+
+/* hero page animation  */
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid var(--primary-col-1);
+    white-space: nowrap;
+    animation:typing 3.5s alternate-reverse 2s infinite forwards,blink 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+.abtBtn{
+    position: relative;
+    border-left:3.5px solid var(--primary-col-1);
+    border-right: 3.5px solid var(--primary-col-1);
+    display: inline-block !important;
+}
+.abtBtn::after{
+    content: " ";
+    height: 100%;
+    position: absolute;
+    bottom:0%;
+    left:0px;
+    border: 3.5px solid var(--primary-col-1);
+    border-left: none;
+    border-right: none;
+    width: 25%;
+    transition: all .098s linear;
+
+}
+.abtBtn::before{
+    content: "";
+    height: 100%;
+    position: absolute;
+    top:0%;
+    right:0px;
+    border: 3.5px solid var(--primary-col-1);
+    border-left: none;
+    border-right: none;
+    width: 25%;
+    transition: all .1s linear;
+
+}
+.abtBtn:hover.abtBtn::after,.abtBtn:hover.abtBtn::before{
+    width: 100%;
+    transition: all .1s linear;
+}
+
+
+@media only screen and (min-width:576px){
+
+    .abtBtn::before,.abtBtn::after{
+        width: 15%;
+    }
+    
+}
