@@ -10,6 +10,18 @@
 html{
     scroll-behavior: smooth;
 }
+/* show and hidden class  */
+.hide{
+    opacity: 0;
+    transition: all .8s ;
+    filter: blur(3px);
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 /* text-color  */
 .text-p1 {
     color: var(--primary-col-1) !important;
@@ -61,7 +73,31 @@ html{
     white-space: nowrap;
     animation:typing 3.5s alternate-reverse 2s infinite forwards,blink 1s infinite;
 }
-
+/* loader animation  */
+.spin{
+    animation: spin 2s  infinite linear;
+  }
+  .line{
+    animation: line 2s infinite ease-in-out;
+  }
+  /* spin  */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* line  */
+  @keyframes line {
+    0%   {width:0%}
+    25%  {width:25%;}
+    50%  {width:50%;}
+    75%  {width:75%;}
+    100% {width:100%;}
+  }
+  /* typing  */
 @keyframes typing {
     from {
         width: 0

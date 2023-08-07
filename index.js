@@ -9,6 +9,7 @@ document.querySelector("#menuBar").addEventListener("click",()=>{
 })
 
 
+
 // stickybar small devices
 document.addEventListener("scroll", () => {
     var pageOffset = window.pageYOffset
@@ -53,3 +54,15 @@ const observe = new IntersectionObserver((entries) => {
 })
 let hideEl = document.querySelectorAll(".hide");
 hideEl.forEach((el) => observe.observe(el))
+
+// preloader 
+var loader = document.getElementById("preloader")
+const showPageElm = document.getElementById("showPage")
+window.addEventListener("load",()=>{
+    setTimeout(showPage,1500)
+})
+
+const showPage =()=>{
+    loader.style.display="none";
+    showPageElm.classList.add("!block")
+}
