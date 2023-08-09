@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KarthickPortfolio</title>
+    <!-- style css  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwindcss CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font- Barlow  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-[#331D2C]">
+    <!-- pre loader  -->
+    <div id="preloader" class="bg-p1 w-full h-[100vh] relative z-[2852] fixed">
+        <div
+            class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2 p-2">
+            <img src="img/loaderpng.png" alt="loaderimagepng" class="w-[50px] spin">
+            <span class=" h-[5px] bg-p2 rounded line"></span>
+        </div>
+    </div>
+    <div id="showPage" class="hidden">
+        <!-- heder navigation  -->
+        <header class="bg-white px-4 py-4  shadow-md sticky top-0 z-[450]">
+            <div class="container mx-auto 2xl:px-20">
+                <nav class="flex items-center justify-between ">
+                    <!-- logo  -->
+                    <div>
+                        <a href="#"><img src="img/logo-k.png" alt="logo" class="w-full h-full object-contain"></a>
+                    </div>
+                    <!-- large device menu  -->
+                    <ul class="flex items-center gap-x-1 text-black hidden md:flex">
+                        <li class="hover:bg-slate-50 px-4 py-2 rounded-md"><a href="index.html">Home</a></li>
+                        <li
+                            class="flex items-center gap-1 cursor-pointer hover:bg-slate-50 px-4 py-2 rounded-md relative group/dropdown">
+                            Figma
+                            Projects <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="black" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            <ul
+                                class="absolute top-[100%] left-0 z-[250] flex flex-col w-full bg-slate-100 shadow-md transition-all duration-300 invisible group-hover/dropdown:visible">
+                                <li class="w-full py-2 border-b px-1 hover:bg-slate-200"><a href="img/medplus-d.png"
+                                        target="_blank">Med plus ui design </a></li>
+                                <li class="w-full py-2 border-b px-1 hover:bg-slate-200"><a href="img/ninja-d.png"
+                                        target="_blank">kawasaki bike website</a></li>
+                                <li class="w-full py-2 px-2 hover:bg-slate-200"><a href="img/fd-d.png"
+                                        target="_blank">Design contest</a></li>
+                                <li class="w-full py-2 px-2 hover:bg-slate-200"><a href="https://www.figma.com/file/ICpXkCaSc9o1oTvFteD24L/testfigma?type=design&node-id=836%3A11298&mode=design&t=NIn4Qj2DJArjZBNS-1"
+                                        target="_blank">source code</a></li>
+                            </ul>
+                        </li>
+                        <li class="hover:bg-slate-50 px-4 py-2 rounded-md"><a
+                                href="https://www.figma.com/proto/ICpXkCaSc9o1oTvFteD24L/testfigma?page-id=131%3A57&type=design&node-id=511-645&viewport=5623%2C1742%2C0.76&t=W2QiuiZHFkj4mUY5-1&scaling=contain&starting-point-node-id=510%3A638&mode=design">IOS
+                                App Ui design</a></li>
+                        <li class="hover:bg-slate-50 px-4 py-2 rounded-md"><a
+                                href="https://github.com/Karthikjhonn"><img src="img/github.png" alt="github"></a></li>
+                    </ul>
+                    <!-- small device menu -->
+                    <div class="hover:bg-slate-50 px-4 py-2 rounded-md md:hidden"><a
+                            href="https://github.com/Karthikjhonn"><img src="img/github.png" alt="github"></a>
+                    </div>
+                </nav>
+                <!-- small device nav links  -->
+                <div class="flex items-center justify-between py-4 md:hidden">
+                    <a href="index.html" class="px-2 py-1.5">Home</a>
+                    <div class="relative group/dropdown px-4 py-1.5  overflow:hidden">
+                        <a class="flex items-center gap-1">Projects<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                        <!-- drop down links  -->
+                        <div
+                            class="absolute top-[100%] left-0 flex flex-col w-full bg-slate-50 shadow py-3 transition-all duration-300 hidden group-hover/dropdown:flex">
+                            <a href="img/medplus-d.png" class="py-2 border-b px-1">Med plus website</a>
+                            <a href="img/ninja-d.png" class="py-2 border-b px-1">kawasaki bike website</a>
+                            <a href="img/fd-d.png" class="py-2 px-2">Design contest website</a>
+                            <a href="https://www.figma.com/file/ICpXkCaSc9o1oTvFteD24L/testfigma?type=design&node-id=836%3A11298&mode=design&t=NIn4Qj2DJArjZBNS-1" class="py-2 px-2">source code</a>
+                        </div>
+
+                    </div>
+                    <a href="https://www.figma.com/proto/ICpXkCaSc9o1oTvFteD24L/testfigma?page-id=131%3A57&type=design&node-id=511-645&viewport=5623%2C1742%2C0.76&t=W2QiuiZHFkj4mUY5-1&scaling=contain&starting-point-node-id=510%3A638&mode=design"
+                        class="px-2 py-1.5">IOS design</a>
+                </div>
+        </header>
+        <!-- jumbotron -->
+        <section class="bg-gradient-to-r from-violet-200 via-zinc-100 to-pink-100 hide">
+            <div
+                class="container mx-auto 2xl:px-20 text-lg md:text-2xl font-semibold py-24 lg:py-36 px-4 flex justify-between md:justify-around items-center gap-1 transition-all ease-in-out duration-300 hover:scale-[1.009] max-w-5xl hide">
+                <p class="text-p2 cursor-pointer font-bold w-full"><a href="index.html"
+                        class="text-black !font-medium hide">Home
+                    </a>&#8594; Figma</p>
+                <h1 class="text-5xl bg-gradient-to-r from-violet-300 to-pink-300  bg-clip-text text-transparent hide">
+                    FIGMA
+                </h1>
+            </div>
+        </section>
+        <!-- cards  -->
+        <section class="py-8">
+            <div class="container mx-auto 2xl:px-20">
+                <div class="grid grid-cols-1 place-items-center gap-4  p-2.5 md:grid-cols-2 lg:grid-cols-3 lg:p-8">
+
+                    <div
+                        class="bg-white p-2 max-w-sm min-w-sm hover:translate-y-[-10px] transition-all duration-500 ease hide">
+                        <div class="flex items-center gap-x-2 p-2 bg-[#FFE5CA]">
+                            <div class="min-w-[67px] min-h-[75px] bg-[#FA9884] shadow"></div>
+                            <div class="max-w-sm">
+                                <h1 class="text-lg font-medium text-p1">Med plus website design</h1>
+                                <p class="text-sm md:text-md">A website design Ui layout mobile user-friendly and
+                                    browser
+                                    compatibility.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-2 max-w-sm min-w-sm hover:translate-y-[-10px] transition-all duration-500 ease hide">
+                        <div class="flex items-center gap-x-2 p-2 bg-[#8CABFF]">
+                            <div class="min-w-[67px] min-h-[75px] bg-[#4477CE] shadow"></div>
+                            <div class="max-w-sm">
+                                <h1 class="text-lg font-medium text-p1">Med plus IOS App</h1>
+                                <p class="text-sm md:text-md">The brand product medicine delivering IOS App Ui/Ux
+                                    design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-2 max-w-sm min-w-sm hover:translate-y-[-10px] transition-all duration-500 ease hide">
+                        <div class="flex items-center gap-x-2 p-2 bg-[#FFF38C]">
+                            <div class="min-w-[67px] min-h-[75px] bg-[#FFD93D] shadow"></div>
+                            <div class="max-w-sm">
+                                <h1 class="text-lg font-medium text-p1">Design contest website</h1>
+                                <p class="text-sm md:text-md">A creative mind fashion design contest registration site.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- projects  -->
+        <section class="py-8">
+            <div class=" p-2 container mx-auto 2xl:px-20 md:p-4 lg:p-6">
+                <div
+                    class=" p-2.5 grid grid-cols-2 gap-1 place-items-center lg:grid-cols-3 lg:gap-0 max-w-4xl mx-auto lg:p-8">
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/medplus-c.png" alt="project-image" class="w-full h-full"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/medplus-d.png" target="_self"> Med plus </a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/fd-c.png" alt="project-image" class="w-full h-full"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/fd-d.png"> FD contest site</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/ninja-c.png" alt="project-image" class="w-full h-full"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/ninja-d.png"> Bike Website</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/traveling-c.png" alt="project-image" class="w-full h-full"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/traveling-c.png">Traveling CP</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/portfolio-c.png" alt="project-image" class="w-full h-full"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/portfolio-d.png"> portfolio design</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm relative group/hoverstyle hide">
+                        <a href="#"><img src="img/admin-c.png" alt="project-image"
+                                class="w-full h-full object-cover"></a>
+                        <div
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/admin-c.png"> Admin dashboard </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- showcase images -->
+        <section class="pt-0">
+            <div class="container mx-auto 2xl:px-20">
+                <h1 class="text-lg font-medium text-white md:text-2xl md:text-center py-2 px-2">Project image mockup's</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="hide"><img src="img/portfolio-display.png" alt="portfolio showcase"
+                        class="w-full h-full object-cover"></div>
+                <div class="hide"><img src="img/medplus-ios.png" alt="portfolio showcase"
+                        class="w-full h-full object-cover"></div>
+            </div>
+        </section>
+        <!-- footer  -->
+        <footer class="bg-p1 py-4 container mx-auto 2xl:px-20 md:px-4 ">
+            <div class="flex items-center justify-between px-4 py-4 text-white">
+                <div>
+                    <img src="img/logo-k.png" alt="logo">
+                </div>
+                <div>
+                    <a href="https://github.com/Karthikjhonn" class="underline px-2"><small>github</small></a>
+                    <a href="mailto:"><small class="underline">karthickyamkk2001@gmail.com</small></a>
+                </div>
+            </div>
+            <div class="text-white flex flex-col justify-between gap-8 md:flex-wrap md:flex-row">
+                <!-- my contact  -->
+                <div class="flex flex-col gap-2 py-3 px-2.5 border-b w-full md:w-auto md:border-0 hide">
+                    <a href="#" class="flex items-center gap-1 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5">
+                            <path fill-rule="evenodd"
+                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Chennai
+                    </a>
+                    <a href="tel:" class="flex items-center gap-1 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5">
+                            <path fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        8056179854
+                    </a>
+                    <a href="mailto:" class="flex items-center gap-1 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-5 h-5">
+                            <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                            <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        karthickyamkk2001@gmail.com
+                    </a>
+                    <a href="https://wa.me/+918056179854" class="flex items-center gap-1 hover:underline">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png?w=740&t=st=1685366704~exp=1685367304~hmac=7e7a7c1eb8162e59e0d5de33bdfb578a464eb8c0ae91318861ff1ef61735898e"
+                            alt="WhatsApp" class="w-[20px]">
+                        8056179854
+                    </a>
+
+                </div>
+                <!-- quick link -->
+                <div class="flex flex-col gap-1 py-3 px-2.5 border-b w-full md:w-auto md:border-0 hide">
+                    <a class="capitalize hover:underline" href="#home">home</a>
+                    <a class="capitalize hover:underline" href="#about">about</a>
+                    <a class="capitalize hover:underline" href="#resume">resume</a>
+                    <a class="capitalize hover:underline" href="#skill">skill</a>
+                    <a class="capitalize hover:underline" href="#figma">figma</a>
+                    <a class="capitalize hover:underline" href="#project">project</a>
+                    <a class="capitalize hover:underline" href="#contact">contact</a>
+                </div>
+                <!-- social media  -->
+                <div class="flex flex-col gap-1 py-3 px-2.5 border-b w-full md:w-auto md:border-0 hide">
+                    <h1 class="capitalize font-medium">Connect With Me</h1>
+                    <div class="flex items-center gap-2">
+                        <img src="img/Instagram.png" alt="social media">
+                        <img src="img/Twitter.png" alt="social media">
+                        <img src="img/Dribbble.png" alt="social media">
+                        <img src="img/Facebook.png" alt="social media">
+                    </div>
+                </div>
+                <!-- dummy links  -->
+                <div class="flex flex-col gap-1 py-3 px-2.5 border-b w-full md:w-auto md:border-0 hide">
+                    <a href="#" class="capitalize hover:underline">blog</a>
+                    <a href="#" class="capitalize hover:underline">services</a>
+                    <a href="#" class="capitalize hover:underline">advance search</a>
+                    <a href="#" class="capitalize hover:underline">contact</a>
+                    <a href="#" class="capitalize hover:underline">terms 7 services</a>
+                    <a href="#" class="capitalize hover:underline">privacy policy</a>
+                </div>
+                <!-- dummy links  -->
+                <div class="flex flex-col gap-1 py-3 px-2.5 w-full md:w-auto hide">
+                    <a href="#" class="capitalize hover:underline">figma</a>
+                    <a href="#" class="capitalize hover:underline">information</a>
+                    <a href="#" class="capitalize hover:underline">ui/ux search</a>
+                    <a href="#" class="capitalize hover:underline">about me</a>
+                    <a href="#" class="capitalize hover:underline">services</a>
+                </div>
+            </div>
+            <p class="text-white text-center py-4 px-2.5 hide">All Rights Reserved 2023 Designed & Developed by <a
+                    href="https://github.com/Karthikjhonn" class="text-p2 underline">karthick</a></p>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        // pre loader 
+        var loader = document.getElementById("preloader")
+        const showPageElm = document.getElementById("showPage")
+        window.addEventListener("load", () => {
+            setTimeout(showPage, 1500)
+        })
+
+        const showPage = () => {
+            loader.style.display = "none";
+            showPageElm.classList.add("!block")
+        }
+        // show and hidee 
+        const observe = new IntersectionObserver((entries) => {
+            // console.log(entries);
+            entries.forEach((data) => {
+                if (data.isIntersecting) {
+                    data.target.classList.add('show')
+                } else {
+                    data.target.classList.remove('show')
+
+                }
+            })
+        })
+        let hideEl = document.querySelectorAll(".hide");
+        hideEl.forEach((el) => observe.observe(el))
+
+    </script>
+</body>
+
+</html>
