@@ -47,8 +47,8 @@
                     <a class="abtBtn px-4 py-2" href="#about">About me</a>
                     <!-- arrow animation  -->
                     <div class="absolute bottom-[-50px] left-0  w-full animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="black" class="w-6 h-6 md:w-10 md:h-10 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="black" class="w-6 h-6 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
                         </svg>
@@ -61,11 +61,12 @@
                 onclick="activeMenu()">
                 <img src="img/jam_menu.png" alt="menu-icon">
             </div>
-            <!-- navigation links -->
-            <div id="menuBar"
-                class="fixed w-full h-screen bg-black/75 top-0 left-0 z-[350]  shadow-lg transition duration-300 ease-liner translate-x-[-150%]">
 
-                <div class="w-1/2 max-w-sm h-full bg-white flex flex-col items-center justify-evenly">
+            <!-- navigation bar -->
+            <header id="menuBar"
+            class="fixed w-full h-screen bg-black/75 top-0 left-0 z-[350]  shadow-lg transition duration-300 ease-liner translate-x-[-150%]">
+            <!-- navigation links -->
+                <nav class="w-1/2 max-w-sm h-full bg-white flex flex-col items-center justify-evenly">
                     <a href="#about"
                         class="w-full p-2 capitalize text-center text-black flex flex-col justify-center items-center hover:bg-[#E5E5E5]/25 md:p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -130,10 +131,10 @@
                         <img src="img/github.png" alt="github logo">
                         <p>github</p>
                     </a>
-                </div>
+                </nav>
                 
 
-            </div>
+            </header>
 
         </section>
         <!-- about section  -->
@@ -530,6 +531,45 @@
             <div class="grid grid-cols-1 gap-6 place-items-center md:grid-cols-3 md:gap-8 md:py-12">
                 <!-- project-1  -->
                 <div class="w-full h-full group/line group/link relative overflow-hidden shadow hide max-w-sm">
+                    <a href="https://karthik-opendesign.netlify.app" target="_blank">
+                        <div><img src="img/realestate.banner.jpg" alt="project-img" class="object-cover w-full h-full">
+                        </div>
+                        <!-- content  -->
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-white uppercase font-bold px-1 py-1 bg-red-600"> RealEstate Apartment 
+                                </span>
+                            <div class="font-medium text-p1 px-1">
+                                <a href="https://karthik-opendesign.netlify.app" target="_blank">RealEstate apartment static<br>Application</a>
+                            </div>
+                            <div class="flex md:gap-2 pt-1 px-1 text-sm gap-2 flex-wrap items-center">
+                                <span
+                                    class="text-sm px-2 py-1 bg-orange-200 text-orange-800 rounded-full font-medium">HTML5</span>
+                                <span
+                                    class="text-sm px-2 py-1 bg-slate-200 text-slate-800 rounded-full font-medium">CSS3</span>
+                                <span
+                                    class="text-sm px-2 py-1 bg-yellow-200 text-yellow-800 rounded-full font-medium">JAVASCRIPT</span>
+                                 <span class="text-sm px-2 py-1 bg-emerald-200 text-emerald-800 rounded-full font-medium">Tailwindcss</span>
+                            </div>
+                            <div
+                                class="w-[25px] h-[3px] m-2 bg-p2 rounded-full group-hover/line:w-[75px] transition-all duration-100">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- overLay -->
+                    <div
+                        class="bg-gradient-to-b from-black/25 via-[#FCA311]/75 to-[#FCA311] hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
+                        <a href="https://karthik-opendesign.netlify.app" target="_blank"
+                            class="border-2 border-white p-1.5 rounded-full ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="white" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- project-2  -->
+                <div class="w-full h-full group/line group/link relative overflow-hidden shadow hide max-w-sm">
                     <a href="https://superlative-dango-ef7208.netlify.app" target="_blank">
                         <div><img src="img/MacBook Air - 5.jpg" alt="project-img" class="object-cover w-full h-full">
                         </div>
@@ -571,7 +611,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- project-2  -->
+                <!-- project-3  -->
                 <div class="w-full h-full group/line group/link relative overflow-hidden shadow hide max-w-sm">
                     <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank">
                         <div><img src="img/MacBook Air - 3.jpg" alt="project-img" class="object-cover w-full h-full">
@@ -604,46 +644,6 @@
                     <div
                         class="bg-gradient-to-b from-black/25 via-[#FCA311]/75 to-[#FCA311] hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
                         <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank"
-                            class="border-2 border-white p-1.5 rounded-full ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="white" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- project-3  -->
-                <div class="w-full h-full group/line group/link relative overflow-hidden shadow hide max-w-sm">
-                    <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank">
-                        <div><img src="img/MacBook Air - 4.jpg" alt="project-img" class="object-cover w-full h-full">
-                        </div>
-                        <!-- content  -->
-                        <div class="flex flex-col gap-1">
-                            <span class="text-xs text-white uppercase font-bold px-1 py-1 bg-red-600">Ticket Booking
-                                Application</span>
-                            <div class="font-medium text-p1 px-1">
-                                <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank">Concert
-                                    Ticket
-                                    Boooking<br>Application</a>
-                            </div>
-                            <div class="flex md:gap-2 pt-1 px-1 text-sm gap-2 flex-wrap items-center">
-                                <span
-                                    class="text-sm px-2 py-1 bg-orange-200 text-orange-800 rounded-full font-medium">HTML5</span>
-                                <span
-                                    class="text-sm px-2 py-1 bg-slate-200 text-slate-800 rounded-full font-medium">CSS3</span>
-                                <span
-                                    class="text-sm px-2 py-1 bg-yellow-200 text-yellow-800 rounded-full font-medium">JAVASCRIPT</span>
-                            </div>
-                            <div
-                                class="w-[25px] h-[3px] m-2 bg-p2 rounded-full group-hover/line:w-[75px] transition-all duration-100">
-                            </div>
-                        </div>
-                    </a>
-                    <!-- overLay -->
-                    <div
-                        class="bg-gradient-to-b from-black/25 via-[#FCA311]/75 to-[#FCA311] hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
-                        <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank"
                             class="border-2 border-white p-1.5 rounded-full ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="white" class="w-8 h-8">
