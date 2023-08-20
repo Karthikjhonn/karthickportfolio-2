@@ -17,25 +17,29 @@
 </head>
 
 <body class="bg-[#331D2C]">
-    <!-- pre loader  -->
-    <div id="preloader" class="bg-p1 w-full h-[100vh] relative z-[2852] fixed">
+    <!-- preloader  -->
+    <div id="preloader" class="bg-p1 w-full h-[100vh] z-[2852] fixed">
         <div
-            class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2 p-2">
-            <img src="img/loaderpng.png" alt="loaderimagepng" class="w-[50px] spin">
-            <span class=" h-[5px] bg-p2 rounded line"></span>
+            class="flex items-center justify-center h-full w-full">
+            <div class="flex gap-2 md:gap-4 items-center bouncing-loader">
+                <span class="w-4 h-4 md:w-6 md:h-6 bg-slate-100 rounded-full"></span>
+                <span class="w-4 h-4 md:w-6 md:h-6 bg-slate-100 rounded-full"></span>
+                <span class="w-4 h-4 md:w-6 md:h-6 bg-slate-100 rounded-full"></span>
+            </div>
         </div>
     </div>
+    
     <div id="showPage" class="hidden">
         <!-- heder navigation  -->
-        <header class="bg-white px-4 py-4  shadow-md sticky top-0 z-[450]">
+        <header class="bg-white p-4 shadow-md sticky top-0 z-[450]">
             <div class="container mx-auto 2xl:px-20">
-                <nav class="flex items-center justify-between ">
+                <nav class="flex items-center justify-between py-4 ">
                     <!-- logo  -->
                     <div>
                         <a href="#"><img src="img/logo-k.png" alt="logo" class="w-full h-full object-contain"></a>
                     </div>
                     <!-- large device menu  -->
-                    <ul class="flex items-center gap-x-1 text-black hidden md:flex">
+                    <ul class="items-center gap-x-1 text-black hidden md:flex">
                         <li class="hover:bg-slate-50 px-4 py-2 rounded-md"><a href="index.html">Home</a></li>
                         <li
                             class="flex items-center gap-1 cursor-pointer hover:bg-slate-50 px-4 py-2 rounded-md relative group/dropdown">
@@ -68,7 +72,7 @@
                     </div>
                 </nav>
                 <!-- small device nav links  -->
-                <div class="flex items-center justify-between py-4 md:hidden">
+                <div class="flex items-center justify-between  border-t py-2 md:hidden">
                     <a href="index.html" class="px-2 py-1.5">Home</a>
                     <div class="relative group/dropdown px-4 py-1.5  overflow:hidden">
                         <a class="flex items-center gap-1">Projects<svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -152,46 +156,50 @@
         <!-- projects  -->
         <section class="py-8">
             <div class=" p-2 container mx-auto 2xl:px-20 md:p-4 lg:p-6">
+                <h1 class="font-semibold text-lg text-center text-white md:text-2xl py-2 lg:py-4">
+                    Ui Designs
+                </h1>
+                <!-- projects  -->
                 <div
                     class=" p-2.5 grid grid-cols-2 gap-1 place-items-center lg:grid-cols-3 lg:gap-0 max-w-4xl mx-auto lg:p-8">
 
                     <div class="max-w-sm relative group/hoverstyle hide">
                         <a href="#"><img src="img/medplus-c.png" alt="project-image" class="w-full h-full"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/medplus-d.png" target="_self"> Med plus </a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75  invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/medplus-d.png" target="_self" class="w-full h-full flex items-center justify-center"> Med plus </a>
                         </div>
                     </div>
 
                     <div class="max-w-sm relative group/hoverstyle hide">
                         <a href="#"><img src="img/fd-c.png" alt="project-image" class="w-full h-full"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/fd-d.png"> FD contest site</a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/fd-d.png" class="w-full h-full flex items-center justify-center"> FD contest site</a>
                         </div>
                     </div>
 
                     <div class="max-w-sm relative group/hoverstyle hide">
                         <a href="#"><img src="img/ninja-c.png" alt="project-image" class="w-full h-full"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/ninja-d.png"> Bike Website</a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/ninja-d.png" class="w-full h-full flex items-center justify-center"> Bike Website</a>
                         </div>
                     </div>
 
                     <div class="max-w-sm relative group/hoverstyle hide">
                         <a href="#"><img src="img/traveling-c.png" alt="project-image" class="w-full h-full"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/traveling-c.png">Traveling CP</a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/traveling-c.png" class="w-full h-full flex items-center justify-center">Traveling CP</a>
                         </div>
                     </div>
 
                     <div class="max-w-sm relative group/hoverstyle hide">
                         <a href="#"><img src="img/portfolio-c.png" alt="project-image" class="w-full h-full"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/portfolio-d.png"> portfolio design</a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/portfolio-d.png" class="w-full h-full flex items-center justify-center"> portfolio design</a>
                         </div>
                     </div>
 
@@ -199,8 +207,8 @@
                         <a href="#"><img src="img/admin-c.png" alt="project-image"
                                 class="w-full h-full object-cover"></a>
                         <div
-                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 flex items-center justify-center  invisible group-hover/hoverstyle:visible md:text-2xl ">
-                            <a href="img/admin-c.png"> Admin dashboard </a>
+                            class="absolute w-full h-full top-0 left-0 text-white font-bold text-lg bg-black/75 invisible group-hover/hoverstyle:visible md:text-2xl ">
+                            <a href="img/admin-c.png" class="w-full h-full flex items-center justify-center"> Admin dashboard </a>
                         </div>
                     </div>
 
@@ -212,8 +220,9 @@
         <!-- showcase images -->
         <section class="pt-0">
             <div class="container mx-auto 2xl:px-20">
-                <h1 class="text-lg font-medium text-white md:text-2xl md:text-center py-2 px-2">Project image mockup's</h1>
-            </div>
+                <h1 class="font-semibold text-lg text-center text-white md:text-2xl py-2 lg:py-4">
+                    Project-Image mockup
+                </h1>            </div>
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="hide"><img src="img/portfolio-display.png" alt="portfolio showcase"
                         class="w-full h-full object-cover"></div>
