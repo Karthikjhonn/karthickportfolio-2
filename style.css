@@ -130,7 +130,7 @@ html {
 @keyframes bouncing-loader {
     to {
       opacity: 0.1;
-      transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -16px, 0);
     }
   }
   
