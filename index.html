@@ -19,8 +19,7 @@
 <body>
     <!-- preloader  -->
     <div id="preloader" class="bg-p1 w-full h-[100vh] z-[2852] fixed ">
-        <div
-            class="flex items-center justify-center h-full w-full">
+        <div class="flex items-center justify-center h-full w-full">
             <div class="flex gap-2 md:gap-4 items-center bouncing-loader">
                 <span class="w-4 h-4 md:w-6 md:h-6 bg-slate-100 rounded-full"></span>
                 <span class="w-4 h-4 md:w-6 md:h-6 bg-slate-100 rounded-full"></span>
@@ -116,54 +115,72 @@
                 </div>
             </nav>
         </header>
-        <!-- hero section  ****** -->
-        <section id="hero"
-            class="min-h-screen w-full lg:bg-[url('img/heroimg-L.png')] bg-[url('img/heroimg-S.png')] bg-no-repeat bg-cover bg-center flex items-center lg:justify-end justify-center">
-            <div class="p-4 flex flex-col gap-12 overflow-hidden hide  py-16">
-                <div>
-                    <h1
-                        class="capitalize w-full text-center xl:text-start text-black lg:text-5xl md:text-4xl text-md font-bold">
-                        Karthick
-                        <div class="typed-out">
-                            <span class=" inline-block">Frontend
-                                <span class="text-p2">Angular Ui Designer & Developer..</span>
-                            </span>
+        <!-- hero section  ****** -->        
+        <section class="h-screen">
+            <div
+                class="flex justify-center items-center py-36 flex-col gap-8  h-full w-full relative  container mx-auto p-4 2xl:px-20 md:gap-4 ">
+                
+                <!-- name  -->
+                <div class="text-center hide">
+                    <h1 class="text-xl font-normal ">Hello!  I'm <br> <span
+                            class="text-5xl font-bold uppercase">Karthick</span></h1>
+                    <p class="text-xl font-light capitalize md:hidden">A Frontend Angular Ui Designer & Developer..</p>
+                    <p class="text-2xl font-light capitalize md:block hidden typed-out">A Frontend Angular Ui Designer & Developer..</p>
+                </div>
+                <!-- content  -->
+                <div class="max-w-2xl hide">
+                    <p class="text-center text-sm md:text-base">To secure a position as a Frontend Developer in a
+                        dynamic and progressive organization where I can apply my technical and creative skills to help
+                        the company achieve its goal.</p>
+                    <!-- social  -->
+                    <div class="flex gap-4 items-center justify-center py-2.5 md:py-4">
+                        <div class="flex items-center hover:text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                            <a href="https://www.linkedin.com/in/karthick-v-804a0726b" target="_blank" class="text-sm">Linked in</a>
                         </div>
-                    </h1>
-                    <p class="text-p1 font-medium py-1 text-center lg:text-start">
-                        @Karthick_2023
-                    </p>
-                </div>
-                <div class="mx-auto hide">
-                    <a class="abtBtn px-4 py-2" href="#about">About me</a>
-                    <!-- arrow animation  -->
-                    <div class="absolute bottom-[-50px] left-0  w-full animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="black" class="w-6 h-6 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-                        </svg>
+                        <div class="flex items-center hover:text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                            <a href="https://github.com/Karthikjhonn" class="text-sm">GitHub</a>
+                        </div>
                     </div>
-                </div>
+                    <!-- buttons  -->
+                    <div class="py-6 ">
+                        <button class="hidden lg:block mx-auto"><a class="abtBtn px-4 py-2" href="#about">About
+                                me</a></button>
+                        <button class="block mx-auto lg:hidden px-4 py-2 bg-p2 rounded-md overflow-hidden"><a
+                                href="#about" class=" group/btn relative overflow-hidden">
+                                <span class="relative z-30">About me</span>
+                                <span
+                                    class="bg-amber-400 w-[20%] aspect-square rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover/btn:w-[200%] group-hover/btn:opacity-100"></span>
+                            </a></button>
+                    </div>
 
+                </div>
+                <!-- arrow animation  -->
+                <div class="absolute bottom-3 w-full left-0  animate-bounce lg:bottom-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6 mx-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
             </div>
         </section>
         <!-- about section  -->
-        <section id="about" class="container mx-auto px-4 py-4 2xl:px-20 lg:py-12 hide">
-            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                <div
-                    class="flex flex-col gap-6 text-center text-p1 font-medium items-star lg:max-w-lg md:text-start hide">
-                    <div>
-                        <h1 class="font-semibold text-lg py-2 md:text-2xl">About me</h1>
-                        <p class="hide">
-                            To secure a position as a Frontend Developer in a dynamic and progressive organization where
-                            I
-                            can
-                            apply my technical and creative skills to help the company achieve its goal.
-                        </p>
-                    </div>
-                    <p class="hide relative z-[250]">
-                        Hi there,
+        <section id="about" class="container mx-auto p-4 2xl:px-20 lg:py-12 ">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 relative">
+                <div class="flex flex-col gap-6  font-normal items-star lg:max-w-lg text-start ">
+                    <h1 class="font-semibold text-2xl py-2 text-center md:text-start md:py-0 hide">About me</h1>
+                    <p class="hide">
+                        Hi there, <br>
                         Welcome to my portfolio! I am KARTHICK a passionate frontend developer with a keen eye for
                         design
                         and a strong proficiency for creating engaging user experiences. With a solid foundation in
@@ -171,18 +188,16 @@
                         CSS,Tailwindcss and JavaScript, Angular Framework, specialize in crafting clean, responsive, and
                         Work closely with UX designers to create visually appealing and intuitive user interfaces,
                         ranging
-                        from simple static websites to complex web applications and single page application.Within my
+                        from simple static websites to complex web applications and single page application. Within my
                         portfolio, you will find a collection of <a href="#project"
                             class="text-blue-600 underline">projects</a> that highlight my expertise in frontend
                         development. From responsive layouts to interactive components, each project showcases my
                         attention
                         to detail and commitment to delivering exceptional results.
-                    <div class="absolute left-[-150px] top-[0px] max-w-sm w-full h-full"><img src="img/blobs.png"
-                            alt="blobs image" class="w-full h-full object-contain"></div>
                     </p>
-                    <p class="hide">
-                        Proficiency in <span
-                            class="bg-red-200 text-red-600 px-1 rounded inline-block font-semibold">ANGULAR</span> that
+                    <div class="w-64 h-64 bg-[#F9FAFB] p-2 absolute top-1/4 -left-1/2 rounded-full -z-20"></div>
+                    <p class="text-center md:text-start hide">
+                        Proficiency in <b>ANGULAR</b> that
                         involved developing dynamic web SPA applications using Angular. I am
                         well-versed in Angular concepts, such as components, modules, services, and routing, reactive
                         module
@@ -190,16 +205,16 @@
                     </p>
                 </div>
                 <div class="relative hide">
-                    <img src="img/about-img.png" alt="profile image" class="object-contain w-full h-full" />
+                    <img src="img/about-img-2.jpg" alt="profile image" class="object-contain w-full h-full" />
                     <h1
-                        class="w-full px-10 bg-gradient-to-r from-violet-50 via-amber-100 to-slate-900 bg-clip-text text-transparent text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-3xl hide">
-                        Karthick <br> Frontend designer & developer</h1>
+                        class="w-full px-10 bg-gradient-to-r from-violet-500 via-amber-400 to-pink-500 bg-clip-text text-transparent text-xl font-bold absolute bottom-0 left-1/2 -translate-x-1/2 text-center  md:text-3xl hidden lg:block hide">
+                        Frontend Angular Ui designer & developer</h1>
                 </div>
             </div>
         </section>
         <!-- sticky bar small devices -->
         <div id="stickybar"
-            class="bg-p2 border-l-8 border-[#FCA311] text-white inline-block px-2 py-2 fixed z-[350] right-[-65px] rounded-bl-xl rounded-tl-xl duration-700 top-[40%]  md:hidden"
+            class="bg-[#b0fc42] border-l-8 border-[#b0fc42] text-white inline-block px-2 py-2 fixed z-[350] right-[-65px] rounded-bl-xl rounded-tl-xl duration-700 top-[40%]  md:hidden"
             onclick="stickySmallClose()">
             <div class="flex-col">
                 <div class="my-4 bg-black p-1 rounded-full hover:scale-110 duration-100">
@@ -266,8 +281,8 @@
 
         </div>
         <!-- resume section  -->
-        <section id="resume" class="container mx-auto px-4 py-4 2xl:px-20 lg:py-12 hide">
-            <h1 class="font-semibold text-lg text-center md:text-2xl py-2 lg:py-4">
+        <section id="resume" class="container mx-autop p-4 2xl:px-20 lg:py-12 hide">
+            <h1 class="font-semibold text-center text-2xl py-2 lg:py-4">
                 Resume
             </h1>
 
@@ -290,7 +305,7 @@
                             <li class="flex gap-2 bg-red-00 py-4 px-4 items-center">
                                 <div>
                                     <div
-                                        class="w-[20px] h-[20px] bg-slate-200 rounded-full after:content-[''] after:border after:border-slate-200 after:absolute after:h-[75px] lg:after:h-[65px] after:right-[50%] relative after:top-[50%]">
+                                        class="w-[20px] h-[20px] bg-slate-200 rounded-full after:content-[''] after:border after:border-slate-200 after:absolute after:h-[65px] lg:after:h-[65px] after:right-[50%] relative after:top-[50%]">
                                     </div>
                                 </div>
                                 <p>HSC state board - 2019</p>
@@ -312,7 +327,7 @@
                             class="bg-amber-400 w-[20%] aspect-square rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover/btn:w-[200%] group-hover/btn:opacity-100"></span>
                     </a>
                 </div>
-                <p class="px-2.5 py-2.5 bg-slate-50 rounded-sm max-w-lg hide">
+                <p class="px-2.5 py-2.5 bg-[#FAFAFA] rounded-sm max-w-lg hide">
                     I would like to add one more thing that everything what I learned and
                     practiced with my own interest, I have gain some experience through
                     <a href="#project" class="text-blue-600">my projects</a> Which I practiced while learning these
@@ -329,8 +344,8 @@
         </section>
         <!-- skills section  -->
         <section id="skill" class="bg-black text-white md:px-4 py-4 hide">
-            <div class="container mx-auto 2xl:px-20">
-                <h1 class="font-semibold text-lg text-center md:text-2xl py-2 lg:py-4">
+            <div class="container mx-auto 2xl:px-20 px-4">
+                <h1 class="font-semibold text-2xl text-center  py-2 lg:py-4">
                     My Skills
                 </h1>
 
@@ -338,7 +353,7 @@
                     class="flex flex-col gap-12 py-12 lg:py-24 lg:flex-row-reverse lg:justify-between lg:items-center w-full hide">
                     <!-- bar design  -->
                     <div
-                        class="flex flex-col gap-8 bg-slate-50/25 hover:bg-slate-50/[.3] transition duration-100 p-8 w-full max-w-lg mx-auto md:rounded ">
+                        class="flex flex-col gap-8 bg-slate-50/25 hover:bg-slate-50/[.3] transition duration-100 px-3.5 py-6 w-full max-w-lg mx-auto rounded ">
                         <!-- one  -->
                         <div
                             class="flex flex-col gap-2 w-full relative hover:translate-y-[-5px] esase duration-200 hide">
@@ -458,7 +473,9 @@
                 </div>
 
                 <!-- skill cards  -->
-                <div class="grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-2 lg:grid-cols-3 md:px-0">
+                <h1 class="font-semibold  text-center text-2xl py-2 lg:py-4"> What I do
+                </h1>
+                <div class="grid grid-cols-1 gap-8 px-4 py-12 md:grid-cols-2 lg:grid-cols-3 md:px-0 ">
                     <!-- frontend development  -->
                     <div
                         class="px-4 py-6 bg-white max-w-md mx-auto rounded hover:shadow-slate-500 shadow-lg lg:hover:-translate-y-[10px] transition-all duration-200 hide">
@@ -527,10 +544,11 @@
             </div>
         </section>
         <!-- figma section  -->
-        <div class="hide"><a><img src="img/figma-project-display-img.png" alt="image" class="w-full h-full object-cover"></a></div>
+        <div class="hide"><a><img src="img/figma-project-display-img.png" alt="image"
+                    class="w-full h-full object-cover"></a></div>
         <section id="figma" class="px-4 py-4 bg-p2 relative overflow-hidden hide">
             <div class="container mx-auto py-12 2xl:px-20 relative z-[4] ">
-                <h1 class="font-semibold text-lg text-center md:text-2xl pb-16">
+                <h1 class="font-semibold text-center text-2xl pb-16">
                     Figma
                 </h1>
 
@@ -563,7 +581,7 @@
         </section>
         <!-- projects section  -->
         <section id="project" class="px-4 py-4 2xl:px-20 container mx-auto hide">
-            <h1 class="font-semibold text-lg text-center md:text-2xl py-16">
+            <h1 class="font-semibold  text-center text-2xl py-16">
                 Projects
             </h1>
             <div class="grid grid-cols-1 gap-6 place-items-center md:grid-cols-2 md:gap-8 md:py-12 lg:grid-cols-3">
@@ -737,18 +755,16 @@
                 </div>
                 <!-- project-5  -->
                 <div class="w-full h-full group/line group/link relative overflow-hidden shadow hide max-w-sm">
-                    <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank">
+                    <a href="https://datavissform.netlify.app/" target="_blank">
                         <div><img src="img/MacBook Air - 6.jpg" alt="project-img" class="object-cover w-full h-full">
                         </div>
                         <!-- content  -->
                         <div class="flex flex-col gap-1">
-                            <span class="text-xs text-white uppercase font-bold px-1 py-1 bg-red-600">Angular Material
-                                Ui
+                            <span class="text-xs text-white uppercase font-bold px-1 py-1 bg-red-600">Reactive form Validation
+                                
                                 (SPA)</span>
                             <div class="font-medium text-p1 px-1">
-                                <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank">Angular Material Ui
-                                    Clone single
-                                    page <br>Application</a>
+                                <a href="https://datavissform.netlify.app/" target="_blank">Angular Reactive form validation SPA<br>Application</a>
                             </div>
                             <div class="flex md:gap-2 pt-1 px-1 text-sm gap-2 flex-wrap items-center">
                                 <span
@@ -775,7 +791,7 @@
                     <!-- overLay -->
                     <div
                         class="bg-gradient-to-b from-black/25 via-[#FCA311]/75 to-[#FCA311] hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
-                        <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank"
+                        <a href="https://datavissform.netlify.app/" target="_blank"
                             class="border-2 border-white p-1.5 rounded-full ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                                 stroke="white" class="w-8 h-8">
@@ -837,7 +853,7 @@
         <section id="contact"
             class="py-4  bg-gradient-to-br from-[#E5E5E5] from-70% to-[#FCA311] to-50%  md:bg-gradient-to-br md:from-[#E5E5E5] md:from-50% md:to-[#FCA311] md:to-50% ">
             <div class="container mx-auto 2xl:px-20 hide">
-                <h1 class="font-semibold text-lg text-black py-4 px-4 md:text-2xl">Contact me</h1>
+                <h1 class="font-semibold  text-black py-4 px-4 text-2xl">Contact me</h1>
                 <div class="grid grid-cols-1 place-items-center gap-8 px-4 py-4 lg:grid-cols-2">
                     <!-- contact details  -->
                     <div class="flex flex-col gap-4 w-full">
