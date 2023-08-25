@@ -122,7 +122,7 @@ html {
     }
 
     to {
-        border-color: black;
+        border-color: var(--primary-col-1);
     }
 }
 
@@ -133,7 +133,7 @@ html {
       transform: translate3d(0, -16px, 0);
     }
   }
-  
+  /* pre loader  */
   .bouncing-loader {
     display: flex;
     justify-content: center;
@@ -154,8 +154,8 @@ html {
 
 .abtBtn {
     position: relative;
-    border-left: 3.5px solid var(--primary-col-1);
-    border-right: 3.5px solid var(--primary-col-1);
+    border-left: 3.5px solid var(--primary-col-2);
+    border-right: 3.5px solid var(--primary-col-2);
     display: inline-block !important;
 }
 
@@ -165,7 +165,7 @@ html {
     position: absolute;
     bottom: 0%;
     left: 0px;
-    border: 3.5px solid var(--primary-col-1);
+    border: 3.5px solid var(--primary-col-2);
     border-left: none;
     border-right: none;
     width: 25%;
@@ -179,7 +179,7 @@ html {
     position: absolute;
     top: 0%;
     right: 0px;
-    border: 3.5px solid var(--primary-col-1);
+    border: 3.5px solid var(--primary-col-2);
     border-left: none;
     border-right: none;
     width: 25%;
@@ -193,13 +193,35 @@ html {
     transition: all .1s linear;
 }
 
+.logo-skill>svg:nth-child(odd){
+   transition-delay: .1s;
+}
+
+.projects>div:nth-child(odd){
+    transition-delay: .2s;
+ }
 
 
-@media only screen and (min-width:576px) {
+@media only screen and (max-width:576px) {
 
     .abtBtn::before,
     .abtBtn::after {
         width: 15%;
     }
-
+    
 }
+
+/* // Animation */
+@keyframes scroll {
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(-100%)}
+}
+
+
+
+	.slide-track {
+        animation: scroll 15s linear  infinite;
+		width: auto;
+        display: inline-block;
+	}
+	
