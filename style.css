@@ -130,7 +130,7 @@ html {
 @keyframes bouncing-loader {
     to {
       opacity: 0.1;
-      transform: translate3d(0, -16px, 0);
+      transform: translate3d(0, -14px, 0);
     }
   }
   /* pre loader  */
@@ -140,7 +140,7 @@ html {
   }
   
   .bouncing-loader > span {
-    animation: bouncing-loader 0.5s infinite alternate;
+    animation: bouncing-loader 0.4s infinite alternate;
   }
   
   .bouncing-loader > span:nth-child(2) {
@@ -211,7 +211,7 @@ html {
     
 }
 
-/* // Animation */
+/* // figma Animation */
 @keyframes scroll {
 	0% { transform: translateX(100%); }
 	100% { transform: translateX(-100%)}
